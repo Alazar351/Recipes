@@ -1,6 +1,6 @@
 import "./App.css";
-import NavBar from "./components/Navbar.jsx";
-import Pages from "./pages/Pages.jsx";
+import NavBar from "./components/Navbar";
+import Pages from "./pages/Pages";
 import Category from "./components/Category";
 import Search from "./components/Search";
 import { BrowserRouter } from "react-router-dom";
