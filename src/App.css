@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: 161, 204, 209;
+  --secondary-color: 244, 242, 222;
+  --accent-color1: 124, 157, 150;
+  --accent-color2: 233, 179, 132;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgb(var(--primary-color), 50%) 70%
+  );
+}

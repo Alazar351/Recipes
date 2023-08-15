@@ -1,0 +1,35 @@
+.fav {
+  position: absolute;
+  top: 0px;
+
+  cursor: pointer;
+  z-index: 3;
+}
+
+.isFav:hover {
+  color: red;
+}
+
+.isFav {
+  color: rgba(255, 0, 0, 0.562);
+}
+
+.notFav {
+  color: rgb(126, 208, 247);
+}
+
+.notFav:hover {
+  color: rgb(0, 174, 255);
+}
+
+.slide {
+  background-color: transparent;
+  border: none;
+  top: 10px;
+  left: 10px;
+}
+
+svg {
+  max-width: 25px;
+  max-height: 25px;
+}

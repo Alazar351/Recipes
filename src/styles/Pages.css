@@ -1,0 +1,18 @@
+.allPages {
+  min-height: 71vh;
+}
+
+.favError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 39px;
+  width: 300px;
+  height: 300px;
+  margin-left: 42vw;
+}
+
+.favSlideError {
+  font-size: xx-large;
+  margin-top: 2rem;
+}
