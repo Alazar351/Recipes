@@ -1,9 +1,10 @@
 import "../styles/Navbar.css";
-
+import Search from "./Search.jsx";
 import NavItem from "./NavItem.jsx";
 import PropTypes from "prop-types";
 const NavBar = () => (
   <nav className="nav">
+    <Search />
     <ul className="navUl">
       <NavItem targetUrl="/" text="Dashboard" />
       <NavItem targetUrl="/discover" text="Discover Recipes" />

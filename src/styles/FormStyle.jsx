@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
 const FormStyle = styled.form`
-  margin: 0rem 20rem;
-  position: absolute;
-  width: 270px;
-  top: 70px;
-  left: 480px;
+  top: 15px;
   input {
     font-size: 1rem;
     padding: 0.5rem;

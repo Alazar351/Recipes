@@ -1,8 +1,7 @@
 import "./App.css";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import Pages from "./pages/Pages";
 import Category from "./components/Category";
-import Search from "./components/Search";
 import { BrowserRouter } from "react-router-dom";
 import Wrapper from "./styles/Wrapper.jsx";
 
@@ -11,7 +10,6 @@ function App() {
     <BrowserRouter>
       <Wrapper>
         <NavBar />
-        <Search />
       </Wrapper>
       <Category />
       <Pages />
