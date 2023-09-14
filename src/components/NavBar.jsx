@@ -1,4 +1,4 @@
-import "../styles/Navbar.css";
+import "../styles/NavBar.css";
 import Search from "./Search.jsx";
 import NavItem from "./NavItem.jsx";
 import PropTypes from "prop-types";
