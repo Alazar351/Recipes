@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const FormStyle = styled.form`
-  top: 15px;
+  position: absolute;
+  top: 0px;
   input {
     font-size: 1rem;
     padding: 0.5rem;
@@ -11,6 +12,9 @@ const FormStyle = styled.form`
 
   input:focus {
     box-shadow: 2px 2px 1px 1px rgb(var(--accent-color2));
+  }
+  @media (max-width: 705px) {
+    position: relative;
   }
 `;
 

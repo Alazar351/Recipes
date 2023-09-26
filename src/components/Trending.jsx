@@ -10,6 +10,20 @@ import { setRecentlyClicked } from "../util/setRecentlyViewed.jsx";
 
 function Trending() {
   const [trending, setTrending] = useState([]);
+  const [splidePage, setSplidePage] = useState(4);
+
+  const updateSplidePage = () => {
+    if (window.innerWidth < 621) {
+      setSplidePage(1);
+    } else if (window.innerWidth < 980) {
+      setSplidePage(2);
+    } else if (window.innerWidth < 1290) {
+      setSplidePage(3);
+    } else {
+      setSplidePage(4);
+    }
+  };
+
   const getTrending = async () => {
     const api = await fetch(
       `https://api.spoonacular.com/recipes/random?apiKey=${
@@ -23,6 +37,13 @@ function Trending() {
 
   useEffect(() => {
     getTrending();
+    updateSplidePage();
+
+    window.addEventListener("resize", updateSplidePage);
+
+    return () => {
+      window.removeEventListener("resize", updateSplidePage);
+    };
   }, []);
 
   return (
@@ -30,7 +51,7 @@ function Trending() {
       <Title>Trending picks</Title>
       <Splide
         options={{
-          perPage: 4,
+          perPage: splidePage,
           arrows: false,
           pagination: false,
           drag: "free",

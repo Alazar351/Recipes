@@ -9,6 +9,7 @@ const Detail = styled(motion.div)`
 
   .pic {
     margin-right: 20px;
+    width: 100%;
   }
   .active {
     background-color: rgb(var(--accent-color2));
@@ -32,6 +33,14 @@ const Detail = styled(motion.div)`
 
   a:hover {
     color: rgb(var(--accent-color1));
+  }
+
+  @media (max-width: 1170px) {
+    flex-direction: column;
+    img {
+      max-width: 556px;
+      width: 100%;
+    }
   }
 `;
 

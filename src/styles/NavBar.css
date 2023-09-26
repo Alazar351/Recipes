@@ -16,7 +16,7 @@
 
 .navUl {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   list-style: none;
 }
 

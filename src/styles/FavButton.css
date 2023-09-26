@@ -12,10 +12,14 @@
 
 .isFav {
   color: rgba(255, 0, 0, 0.562);
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .notFav {
   color: rgb(126, 208, 247);
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .notFav:hover {
@@ -27,9 +31,4 @@
   border: none;
   top: 10px;
   left: 10px;
-}
-
-svg {
-  max-width: 25px;
-  max-height: 25px;
 }
