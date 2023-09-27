@@ -31,6 +31,10 @@ const Detail = styled(motion.div)`
     list-style-type: none;
   }
 
+  .ingredients {
+    min-width: 2000px;
+  }
+
   a:hover {
     color: rgb(var(--accent-color1));
   }
@@ -40,6 +44,9 @@ const Detail = styled(motion.div)`
     img {
       max-width: 556px;
       width: 100%;
+    }
+    .title {
+      max-width: 556px;
     }
   }
 `;

@@ -31,7 +31,7 @@ function Recipe() {
       transition={{ duration: 0.5 }}
     >
       <div className="pic">
-        <h2>{details.title}</h2>
+        <h2 className="title">{details.title}</h2>
         <img src={details.image}></img>
       </div>
       <div>
@@ -59,7 +59,7 @@ function Recipe() {
           </div>
         )}
         {activeTab === "ingredients" && (
-          <ul>
+          <ul className="ingredients">
             {details.extendedIngredients.map((ingredient) => {
               return (
                 <li className="ingre" key={ingredient.id}>
