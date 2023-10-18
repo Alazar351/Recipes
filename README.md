@@ -20,7 +20,7 @@ VITE_API_KEY = your-API-key
 ```
     
 ## Usage
-Welcome to the Recipree! Our website is designed to help you discover, save, and create delicious recipes from around the world. Follow these steps to make the most of our platform:
+Welcome to the Recipree! The website is designed to help you discover, save, and create delicious recipes from around the world. Follow these steps to make the most of our platform:
 
 ### Browsing Recipes
 
